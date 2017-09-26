@@ -4,7 +4,8 @@ import { Chats } from "../imports/collections/chats";
 Meteor.startup(() => {
   if (Chats.find({}).count() === 0) {
     Chats.insert({
-      title: 'Ethan Gonzalez'
+      title: 'Ethan Gonzalez',
+      optional: 6
     });
 
     Chats.insert({
